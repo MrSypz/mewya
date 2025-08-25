@@ -5,7 +5,7 @@ A lightweight Rust web API built with Axum.
 ## Quick Start
 
 1. Clone this repository
-2. Copy `.env.example` to `.env` and configure
+2. Rename `.env.example` to `.env` and configure
 3. Run the development server:
 
 \`\`\`bash
