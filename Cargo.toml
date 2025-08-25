@@ -1,0 +1,33 @@
+[package]
+name = "{{ project-name }}"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Essential - Core web framework
+axum = "0.8.4"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+# Essential - JSON serialization (almost always needed)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Optional but commonly used - Middleware and utilities
+# tower = "0.5.2"
+# tower-http = { version = "0.6.2", features = ["cors", "trace"] }
+
+# Optional - Logging (highly recommended)
+# tracing = "0.1"
+# tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Optional - Environment variables
+# dotenvy = "0.15"
+
+# Optional - Database (uncomment and configure as needed)
+# sqlx = { version = "0.8.6", features = ["runtime-tokio-native-tls", "postgres"] }
+# sqlx = { version = "0.8.6", features = ["runtime-tokio-native-tls", "mysql"] }
+
+
+# Optional - Time and UUID utilities
+# chrono = { version = "0.4", features = ["serde"] }
+# uuid = { version = "1.16.0", features = ["v4", "serde"] }
